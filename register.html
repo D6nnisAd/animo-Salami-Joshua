@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account - Animo</title>
+
+    <!-- Favicon and SEO Tags -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="theme-color" content="#03082E">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sign up for Animo and start your journey today. Choose your package, enter your activation key, and join a community that rewards your actions.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.animowebsite.ng/register.html">
+    <meta property="og:title" content="Create Your Account - Animo">
+    <meta property="og:description" content="Sign up for Animo and start your journey today. Choose your package, enter your activation key, and join a community that rewards your actions.">
+    <meta property="og:image" content="https://www.animowebsite.ng/assets/about-image.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.animowebsite.ng/register.html">
+    <meta property="twitter:title" content="Create Your Account - Animo">
+    <meta property="twitter:description" content="Sign up for Animo and start your journey today. Choose your package, enter your activation key, and join a community that rewards your actions.">
+    <meta property="twitter:image" content="https://www.animowebsite.ng/assets/about-image.jpeg">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons for spinner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --deep-blue: #03082E;
+            --primary-green-start: #bfff3c;
+            --primary-green-end: #76ff03;
+            --glow-color: rgba(185, 255, 60, 0.4);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--deep-blue);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* --- Custom Scrollbar --- */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #020624;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary-green-start) 0%, var(--primary-green-end) 100%);
+            border-radius: 10px;
+            border: 2px solid #020624;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #d4ff7a 0%, #8cff40 100%);
+        }
+
+        .main-container {
+            min-height: 100vh;
+            background-image: url('assets/desktop-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 2rem;
+            background-color: rgba(3, 8, 46, 0.5);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .register-form-wrapper {
+             width: 100%;
+             max-width: 480px;
+             margin: 0 auto;
+        }
+
+        @media (min-width: 992px) {
+            .form-section {
+                height: 100vh;
+                padding: 4rem;
+                overflow-y: auto;
+                justify-content: flex-start; /* Aligns content to the top */
+            }
+             .register-form-wrapper {
+                 max-width: 100%;
+                 margin: 0;
+             }
+             .register-form-wrapper .text-center {
+                 text-align: left !important;
+             }
+             .register-logo {
+                 margin: 0 0 1.5rem 0 !important;
+             }
+        }
+        
+        .register-logo {
+            display: block;
+            height: 30px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .register-form-wrapper h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .register-form-wrapper p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control,
+        .form-select {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-green-start);
+            box-shadow: 0 0 0 0.25rem var(--glow-color);
+            color: #fff;
+        }
+        
+        .form-select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+        
+        .form-select option {
+            background-color: var(--deep-blue);
+        }
+
+        .btn-gradient {
+            background-image: linear-gradient(135deg, var(--primary-green-start) 0%, var(--primary-green-end) 100%);
+            color: var(--deep-blue);
+            border: none;
+            box-shadow: 0 0 15px 2px var(--glow-color);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px 5px var(--glow-color);
+            color: var(--deep-blue);
+        }
+        
+        .btn-gradient:disabled {
+            opacity: 0.7;
+            cursor: wait;
+        }
+        
+        .form-text, .form-check-label {
+             color: rgba(255, 255, 255, 0.7);
+             font-size: 0.8rem;
+        }
+        
+        .form-text a, .error-message a {
+            color: var(--primary-green-start);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .form-text a:hover, .error-message a:hover {
+            text-decoration: underline;
+        }
+        
+        .disclaimer-text {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .login-link {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+         .login-link a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+         }
+         .login-link a:hover {
+             color: var(--primary-green-start);
+         }
+         
+         .error-message a.btn-link {
+            color: inherit;
+            font-weight: 600;
+            text-decoration: underline;
+            padding: 0;
+            border: 0;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid g-0 main-container">
+        <div class="row g-0">
+            <div class="col-lg-6 form-section">
+                 <div class="register-form-wrapper">
+                    <div class="text-center">
+                        <a href="index.html">
+                            <img src="assets/logo.svg" alt="Animo Logo" class="register-logo">
+                        </a>
+                        <h1>Create Your Account</h1>
+                        <p>Join our community and start earning!</p>
+                    </div>
+
+                    <div id="error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Choose a unique username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Create a strong password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="packageSelect" class="form-label">Choose Your Activation Key Package</label>
+                            <select class="form-select" id="packageSelect" aria-label="Select activation key package">
+                                <option selected>Animo Silver ₦10,000</option>
+                                <option value="1">Animo Gold ₦15,000</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="activationKey" class="form-label">Activation Key</label>
+                            <input type="text" class="form-control" id="activationKey" placeholder="Enter your activation key" required>
+                            <div id="keyHelp" class="form-text mt-1">
+                                Don't have a key? 
+                                <a href="merchants.html">Click here.</a>
+                            </div>
+                        </div>
+                        
+                        <p class="disclaimer-text my-3">By signing up, you agree to our Terms of Service and privacy policy.</p>
+
+                        <div class="d-grid mb-3">
+                             <button type="submit" id="submit-btn" class="btn btn-gradient">
+                                <span id="btn-text">Create Account</span>
+                                <span id="btn-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                            </button>
+                        </div>
+                        
+                        <p class="text-center login-link mb-0">
+                            Already have an account? <a href="#">Log In</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!-- This column is empty and only visible on desktop to push the form to the left -->
+            <div class="col-lg-6 d-none d-lg-block"></div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5.3.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerForm = document.getElementById('register-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnSpinner = document.getElementById('btn-spinner');
+            const errorMessageContainer = document.getElementById('error-message');
+
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // 1. Show loading state
+                submitBtn.disabled = true;
+                btnText.textContent = 'Creating Account...';
+                btnSpinner.style.display = 'inline-block';
+                errorMessageContainer.style.display = 'none'; // Hide previous errors
+
+                // 2. Simulate a 3-second delay
+                setTimeout(() => {
+                    // 3. Restore button state
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Create Account';
+                    btnSpinner.style.display = 'none';
+
+                    // 4. Display the error message
+                    errorMessageContainer.innerHTML = `Invalid activation key. Please double check your key or <a href="merchants.html" class="btn-link">Buy a new key here.</a>`;
+                    errorMessageContainer.style.display = 'block';
+
+                    // 5. Scroll to the top of the page
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+
+                }, 3000);
+            });
+        });
+    </script>
+
+</body>
+</html>
