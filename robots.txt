@@ -3,7 +3,6 @@ User-agent: *
 
 # Disallow admin and registration pages from being crawled
 Disallow: /admin.html
-Disallow: /register.html
 
 # Allow all other content
 Allow: /
