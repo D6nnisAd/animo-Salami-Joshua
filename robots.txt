@@ -1,8 +1,9 @@
 # Allow all user agents
 User-agent: *
 
-# Disallow admin and registration pages from being crawled
+# Disallow admin and configuration pages from being crawled
 Disallow: /admin.html
+Disallow: /firebase-init.js
 
 # Allow all other content
 Allow: /
