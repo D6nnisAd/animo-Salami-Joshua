@@ -1,12 +1,12 @@
-# Allow all user agents
+# General rules for all user agents
 User-agent: *
 
-# Disallow admin and configuration pages from being crawled
+# Disallow admin page and all javascript files from being crawled.
 Disallow: /admin.html
+Disallow: /app.js
+Disallow: /admin.js
+Disallow: /auth.js
 Disallow: /firebase-init.js
-
-# Allow all other content
-Allow: /
 
 # Sitemap location
 Sitemap: https://www.animowebsite.ng/sitemap.xml
