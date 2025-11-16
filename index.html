@@ -31,7 +31,7 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Join Animo, the innovative ecosystem that rewards you for your daily steps. Explore our features, including affiliate marketing, skill acquisition, and digital real estate. Walk, engage, and grow with Animo.">
-    <meta name="keywords" content="Animo, walk to earn, play to earn, digital real estate, affiliate marketing, skill acquisition, earn rewards, financial growth">
+    <meta name="keywords" content="Animo, step rewards, play games, digital real estate, affiliate marketing, skill acquisition, get rewards, personal growth">
     <meta name="author" content="Animo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://animosite.com.ng/">
@@ -418,26 +418,28 @@
             background-clip: text;
             text-fill-color: transparent;
         }
-        .reward-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
+        
+        .package-features {
+            list-style: none;
+            padding: 0;
             margin-bottom: 2.5rem;
+            text-align: left;
         }
-        .reward-item {
+        .package-features li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
             background: rgba(3, 8, 46, 0.5);
-            padding: 1rem;
-            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
         }
-        .reward-label {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 0.25rem;
+        .package-features .fa-check-circle {
+            color: var(--primary-green-end);
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
         }
-        .reward-value {
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
+
         .incentives-box {
             background: rgba(3, 8, 46, 0.5);
             padding: 2rem;
@@ -693,16 +695,6 @@
             .package-name {
                 font-size: 2.2rem;
             }
-            .reward-grid {
-                 grid-template-columns: 1fr 1fr;
-                 gap: 1rem;
-            }
-            .reward-item {
-                padding: 0.75rem;
-            }
-            .reward-value {
-                font-size: 1.1rem;
-            }
             .incentives-box {
                 padding: 1.5rem;
             }
@@ -786,7 +778,7 @@
       "name": "Animo",
       "url": "https://animosite.com.ng/",
       "logo": "https://animosite.com.ng/assets/logo.svg",
-      "description": "An innovative, people-driven, and globally connected ecosystem built to provide new avenues for earning and personal growth.",
+      "description": "An innovative, people-driven, and globally connected ecosystem built to provide new avenues for engagement and personal growth.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+2349126281337",
@@ -882,7 +874,7 @@
                 <img src="assets/hero-image-desktop.png" alt="Animo App on Phone" class="hero-image-desktop">
             </a>
             <div class="floating-card floating-card-1-desktop" data-text-group="1">Get Rewarded</div>
-            <div class="floating-card floating-card-2-desktop" data-text-group="2">Play Games</div>
+            <div class="floating-card floating-card-2-desktop" data-text-group="2">Win Rewards</div>
         </div>
     </section>
 
@@ -923,9 +915,9 @@
                 <div class="col-lg-6">
                     <div class="feature-item" data-image="walk-and-earn.jpeg" data-aos="fade-up">
                         <a href="#" class="d-lg-none js-global-link">
-                            <img src="assets/walk-and-earn.jpeg" alt="Walk to Earn" class="img-fluid rounded-4 mb-3 d-lg-none">
+                            <img src="assets/walk-and-earn.jpeg" alt="Walk to Get Rewards" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
-                        <h3 class="feature-title">Walk to Get Rewards</h3>
+                        <h3 class="feature-title">Get Rewarded for Steps</h3>
                         <p class="section-text">Turn your daily steps into rewards. Our technology tracks your movement, making every step a contribution to your well-being and reward balance.</p>
                     </div>
                     <div class="feature-item" data-image="digital-real-estate.jpeg" data-aos="fade-up">
@@ -940,25 +932,25 @@
                             <img src="assets/talk-and-earn.jpeg" alt="Animo Yaps" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Animo Yaps</h3>
-                        <p class="section-text">Your voice has value. Get rewards simply by talking about ANIMO on your social media platforms and get recognized for your engagement.</p>
+                        <p class="section-text">Your voice has value. Get recognized for talking about ANIMO on your social media platforms and get rewards for your engagement.</p>
                     </div>
                     <div class="feature-item" data-image="animo-gigs.jpeg" data-aos="fade-up">
                          <a href="#" class="d-lg-none js-global-link">
                             <img src="assets/animo-gigs.jpeg" alt="Animo Gigs" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Animo Gigs</h3>
-                        <p class="section-text">Connecting people, creating opportunities. Find work, offer services, and get paid for your skills within the simple and secure ANIMO platform.</p>
+                        <p class="section-text">Connecting people, creating opportunities. Find work, offer services, and connect with others through the simple and secure ANIMO platform.</p>
                     </div>
                     <div class="feature-item" data-image="earn-as-you-snap.jpeg" data-aos="fade-up">
                         <a href="#" class="d-lg-none js-global-link">
-                            <img src="assets/earn-as-you-snap.jpeg" alt="Earn as you Snap" class="img-fluid rounded-4 mb-3 d-lg-none">
+                            <img src="assets/earn-as-you-snap.jpeg" alt="Snap & Get Rewards" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Snap & Get Rewards!</h3>
                         <p class="section-text">Get rewarded for spreading the movement on Snapchat. Share daily ANIMO content to your story and get rewards per post.</p>
                     </div>
                     <div class="feature-item" data-image="play-games-and-earn.jpeg" data-aos="fade-up">
                         <a href="#" class="d-lg-none js-global-link">
-                            <img src="assets/play-games-and-earn.jpeg" alt="Play Games and Earn" class="img-fluid rounded-4 mb-3 d-lg-none">
+                            <img src="assets/play-games-and-earn.jpeg" alt="Play Games and Get Rewards" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Play Games & Get Rewards</h3>
                         <p class="section-text">Enjoy playing games on Animo and get rewards for your gameplay. It's entertainment that gives back.</p>
@@ -968,14 +960,14 @@
                             <img src="assets/photo-contest.jpeg" alt="Face of Animo" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Face of Animo</h3>
-                        <p class="section-text">Participate in our monthly photo contest to win prizes up to N500,000 and become the official brand ambassador. It's your chance to step into the spotlight and inspire others.</p>
+                        <p class="section-text">Participate in our monthly photo contest for a chance to win prizes and become the official brand ambassador. It's your chance to step into the spotlight and inspire others.</p>
                     </div>
                     <div class="feature-item" data-image="write-books-and-sell.jpeg" data-aos="fade-up">
                         <a href="#" class="d-lg-none js-global-link">
                             <img src="assets/write-books-and-sell.jpeg" alt="Animo Book Store" class="img-fluid rounded-4 mb-3 d-lg-none">
                         </a>
                         <h3 class="feature-title">Animo Book Store</h3>
-                        <p class="section-text">Have a story to tell? Publish your own e-guides or novels, set your own price, and sell directly to a growing audience across the ANIMO community with a small 5% commission fee.</p>
+                        <p class="section-text">Have a story to tell? Publish your own e-guides or novels, set your own price, and sell directly to a growing audience across the ANIMO community.</p>
                     </div>
                     <div class="feature-item" data-image="animo-skillup.jpeg" data-aos="fade-up">
                         <a href="#" class="d-lg-none js-global-link">
@@ -997,7 +989,7 @@
                     <div class="features-image-col-sticky">
                         <div class="features-image-wrapper">
                             <a href="#" class="js-global-link">
-                                <img src="assets/walk-and-earn.jpeg" class="feature-image active" alt="Walk to Earn" data-image-id="walk-and-earn.jpeg">
+                                <img src="assets/walk-and-earn.jpeg" class="feature-image active" alt="Walk to Get Rewards" data-image-id="walk-and-earn.jpeg">
                             </a>
                             <a href="#" class="js-global-link">
                                 <img src="assets/digital-real-estate.jpeg" class="feature-image" alt="Digital Real Estate" data-image-id="digital-real-estate.jpeg">
@@ -1009,10 +1001,10 @@
                                 <img src="assets/animo-gigs.jpeg" class="feature-image" alt="Animo Gigs" data-image-id="animo-gigs.jpeg">
                             </a>
                             <a href="#" class="js-global-link">
-                                <img src="assets/earn-as-you-snap.jpeg" class="feature-image" alt="Earn as you Snap" data-image-id="earn-as-you-snap.jpeg">
+                                <img src="assets/earn-as-you-snap.jpeg" class="feature-image" alt="Snap & Get Rewards" data-image-id="earn-as-you-snap.jpeg">
                             </a>
                             <a href="#" class="js-global-link">
-                                <img src="assets/play-games-and-earn.jpeg" class="feature-image" alt="Play Games and Earn" data-image-id="play-games-and-earn.jpeg">
+                                <img src="assets/play-games-and-earn.jpeg" class="feature-image" alt="Play Games and Get Rewards" data-image-id="play-games-and-earn.jpeg">
                             </a>
                             <a href="#" class="js-global-link">
                                 <img src="assets/photo-contest.jpeg" class="feature-image" alt="Face of Animo" data-image-id="photo-contest.jpeg">
@@ -1047,18 +1039,16 @@
                         <div class="popular-ribbon">Most Popular</div>
                         <div class="package-bg" style="background-image: url('assets/animo-gold.jpg');"></div>
                         <div class="package-content">
-                            <div class="package-title-wrapper" data-aos="fade-down" data-aos-delay="200"><h3 class="package-title">Reward Pattern</h3></div>
+                            <div class="package-title-wrapper" data-aos="fade-down" data-aos-delay="200"><h3 class="package-title">What's Included</h3></div>
                             <h4 class="package-name" data-aos="fade-down" data-aos-delay="250">Animo Gold</h4>
-                            <div class="reward-grid" data-aos="fade-right" data-aos-delay="300">
-                                <div class="reward-item"><div class="reward-label">Activation Fee</div><div class="reward-value">15,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Sponsor Commission</div><div class="reward-value">N13,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Instant Cashback</div><div class="reward-value">N13,000</div></div>
-                                <div class="reward-item"><div class="reward-label">First Level Spill</div><div class="reward-value">N400</div></div>
-                                <div class="reward-item"><div class="reward-label">Second Level Spill</div><div class="reward-value">N100</div></div>
-                                <div class="reward-item"><div class="reward-label">Snapchat Story</div><div class="reward-value">N1,500</div></div>
-                                <div class="reward-item"><div class="reward-label">Article Engagement</div><div class="reward-value">N1,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Walk-to-Get-Rewards</div><div class="reward-value">N10/Step</div></div>
-                            </div>
+                            <ul class="package-features" data-aos="fade-right" data-aos-delay="300">
+                                <li><i class="fas fa-check-circle"></i> Enhanced Reward Opportunities</li>
+                                <li><i class="fas fa-check-circle"></i> Maximum Step Rewards</li>
+                                <li><i class="fas fa-check-circle"></i> Highest Affiliate Rewards</li>
+                                <li><i class="fas fa-check-circle"></i> Premium Social Engagement Tasks</li>
+                                <li><i class="fas fa-check-circle"></i> Full Access to Animo Gigs</li>
+                                <li><i class="fas fa-check-circle"></i> Full Access to Animo Games</li>
+                            </ul>
                             <div class="incentives-box" data-aos="fade-left" data-aos-delay="350">
                                 <div class="incentive-item"><span>Incentives</span><span class="incentive-status active">Active</span></div>
                                 <div class="incentive-item"><span>Animo Yaps</span><span class="incentive-status active">Active</span></div>
@@ -1078,18 +1068,16 @@
                      <div class="package-card">
                         <div class="package-bg" style="background-image: url('assets/animo-silver.jpg');"></div>
                         <div class="package-content">
-                            <div class="package-title-wrapper" data-aos="fade-down" data-aos-delay="400"><h3 class="package-title">Reward Pattern</h3></div>
+                            <div class="package-title-wrapper" data-aos="fade-down" data-aos-delay="400"><h3 class="package-title">What's Included</h3></div>
                             <h4 class="package-name" data-aos="fade-down" data-aos-delay="450">Animo Silver</h4>
-                             <div class="reward-grid" data-aos="fade-right" data-aos-delay="500">
-                                <div class="reward-item"><div class="reward-label">Activation Fee</div><div class="reward-value">10,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Sponsor Commission</div><div class="reward-value">N9,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Instant Cashback</div><div class="reward-value">N8,500</div></div>
-                                <div class="reward-item"><div class="reward-label">First Level Spill</div><div class="reward-value">N200</div></div>
-                                <div class="reward-item"><div class="reward-label">Second Level Spill</div><div class="reward-value">N100</div></div>
-                                <div class="reward-item"><div class="reward-label">Snapchat Story</div><div class="reward-value">N1,000</div></div>
-                                <div class="reward-item"><div class="reward-label">Article Engagement</div><div class="reward-value">N700</div></div>
-                                <div class="reward-item"><div class="reward-label">Walk-to-Get-Rewards</div><div class="reward-value">N6/Step</div></div>
-                            </div>
+                             <ul class="package-features" data-aos="fade-right" data-aos-delay="500">
+                                <li><i class="fas fa-check-circle"></i> Standard Reward Opportunities</li>
+                                <li><i class="fas fa-check-circle"></i> Standard Step Rewards</li>
+                                <li><i class="fas fa-check-circle"></i> Standard Affiliate Rewards</li>
+                                <li><i class="fas fa-check-circle"></i> Basic Social Engagement Tasks</li>
+                                <li><i class="fas fa-check-circle"></i> Access to Animo Bookstore</li>
+                                <li><i class="fas fa-check-circle"></i> Access to Skill Up Program</li>
+                            </ul>
                              <div class="incentives-box" data-aos="fade-left" data-aos-delay="550">
                                 <div class="incentive-item"><span>Incentives</span><span class="incentive-status active">Active</span></div>
                                 <div class="incentive-item"><span>Animo Yaps</span><span class="incentive-status active">Active</span></div>
@@ -1137,7 +1125,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Animo offers multiple streams for rewards, including our 'Walk to Get Rewards' feature, 'Animo Yaps' for social media engagement, 'Animo Gigs' for freelance work, our Snapchat content feature, playing games, participating in photo contests, and even selling your own e-books in the Animo Book Store.
+                            Animo offers multiple avenues for rewards, including our 'Get Rewarded for Steps' feature, 'Animo Yaps' for social media engagement, 'Animo Gigs' for freelance work, our Snapchat content feature, playing games, participating in photo contests, and even selling your own e-books in the Animo Book Store.
                         </div>
                     </div>
                 </div>
@@ -1150,7 +1138,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Both packages offer great value, but the Gold package provides higher reward potentials, more cashback opportunities, and greater rewards for activities like walking and Snapchat stories. Additionally, the Gold package grants access to all features, including 'Animo Games' and 'Animo Gig', which are not available in the Silver package.
+                            Both packages offer great value, but the Gold package provides enhanced reward opportunities and greater rewards for activities like walking and social sharing. Additionally, the Gold package grants access to all features, including 'Animo Games' and 'Animo Gig', which are not available in the Silver package.
                         </div>
                     </div>
                 </div>
@@ -1203,7 +1191,7 @@
                     <a href="#" class="footer-logo js-global-link">
                         <img src="assets/logo.svg" alt="Animo Logo">
                     </a>
-                    <p>Providing new avenues for earning and personal growth by merging technology, community, and opportunity into one seamless platform.</p>
+                    <p>Providing new avenues for engagement and personal growth by merging technology, community, and opportunity into one seamless platform.</p>
                     <div class="social-links d-flex mt-4">
                         <a href="#" class="twitter js-global-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="facebook js-global-link"><i class="fab fa-facebook-f"></i></a>
