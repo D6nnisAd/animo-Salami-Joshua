@@ -9,4 +9,4 @@ Disallow: /auth.js
 Disallow: /firebase-init.js
 
 # Sitemap location
-Sitemap: https://www.animowebsite.ng/sitemap.xml
+Sitemap: https://animosite.com.ng/sitemap.xml

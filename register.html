@@ -18,17 +18,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.animowebsite.ng/register.html">
+    <meta property="og:url" content="https://animosite.com.ng/register.html">
     <meta property="og:title" content="Create Your Account - Animo">
     <meta property="og:description" content="Sign up for Animo and start your journey today. Choose your package, enter your activation key, and join a community that rewards your actions.">
-    <meta property="og:image" content="https://www.animowebsite.ng/assets/about-image.jpeg">
+    <meta property="og:image" content="https://animosite.com.ng/assets/about-image.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.animowebsite.ng/register.html">
+    <meta property="twitter:url" content="https://animosite.com.ng/register.html">
     <meta property="twitter:title" content="Create Your Account - Animo">
     <meta property="twitter:description" content="Sign up for Animo and start your journey today. Choose your package, enter your activation key, and join a community that rewards your actions.">
-    <meta property="twitter:image" content="https://www.animowebsite.ng/assets/about-image.jpeg">
+    <meta property="twitter:image" content="https://animosite.com.ng/assets/about-image.jpeg">
 
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -302,5 +302,11 @@
     <script src="firebase-init.js?v=1.1.3"></script>
     <script src="app.js?v=1.1.3"></script>
 
+    <script>
+        // Prevent the "install app" prompt on mobile browsers
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
